@@ -10,32 +10,36 @@
 <body class="bg-slate-50 text-slate-900">
   <main class="max-w-6xl mx-auto px-4 py-8">
 <!-- Le parent organise le titre et l’action Contact. -->
-<header class="mb-6">
+<header class=" flex  justify-between mb-6">
   <h1 class="text-3xl font-bold">Catalogue FormaWeb</h1>
   <a href="#contact" class="inline-block px-4 py-2 rounded-xl bg-blue-700 text-white">Contact</a>
 </header>
 <section class="" aria-label="Formations disponibles">
 <!-- La carte : cadre et padding. Les balises gardent leur rôle HTML. -->
-<article class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
-  <h2 class="text-2xl font-bold mb-2">Java</h2>
-  <p class="text-slate-600">Cinq jours pour découvrir le langage et écrire ses premiers programmes.</p>
-  <!-- Le lien conserve sa destination. Son style ne change pas son rôle. -->
-  <a href="java.html" class="inline-block px-4 py-2 rounded-xl bg-blue-700 text-white mt-4">Découvrir Java</a>
-</article>
-<!-- La carte : cadre et padding. Les balises gardent leur rôle HTML. -->
-<article class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
-  <h2 class="text-2xl font-bold mb-2">Web</h2>
-  <p class="text-slate-600">Trois jours pour structurer une page HTML et apprendre les bases de CSS.</p>
-  <!-- Le lien conserve sa destination. Son style ne change pas son rôle. -->
-  <a href="web.html" class="inline-block px-4 py-2 rounded-xl bg-blue-700 text-white mt-4">Découvrir Web</a>
-</article>
-<!-- La carte : cadre et padding. Les balises gardent leur rôle HTML. -->
-<article class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
-  <h2 class="text-2xl font-bold mb-2">DevOps</h2>
-  <p class="text-slate-600">Un parcours pour automatiser les constructions, comprendre les conteneurs et préparer une chaîne de livraison logicielle.</p>
-  <!-- Le lien conserve sa destination. Son style ne change pas son rôle. -->
-  <a href="devops.html" class="inline-block px-4 py-2 rounded-xl bg-blue-700 text-white mt-4">Découvrir DevOps</a>
-</article>
+
+<div class="grid grid-cols-3   gap-4">
+
+  <article class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm flex flex-col">
+    <h2 class="text-2xl font-bold mb-2">Java</h2>
+    <p class="text-slate-600">Cinq jours pour découvrir le langage et écrire ses premiers programmes.</p>
+    <!-- Le lien conserve sa destination. Son style ne change pas son rôle. -->
+    <a href="java.html" class="inline-block px-4 py-2 rounded-xl bg-blue-700 text-white  mt-auto">Découvrir Java</a>
+  </article>
+  <!-- La carte : cadre et padding. Les balises gardent leur rôle HTML. -->
+  <article class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm flex flex-col">
+    <h2 class="text-2xl font-bold mb-2">Web</h2>
+    <p class="text-slate-600">Trois jours pour structurer une page HTML et apprendre les bases de CSS.</p>
+    <!-- Le lien conserve sa destination. Son style ne change pas son rôle. -->
+    <a href="web.html" class="inline-block px-4 py-2 rounded-xl bg-blue-700 text-white mt-auto">Découvrir Web</a>
+  </article>
+  <!-- La carte : cadre et padding. Les balises gardent leur rôle HTML. -->
+  <article class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm flex flex-col">
+    <h2 class="text-2xl font-bold mb-2">DevOps</h2>
+    <p class="text-slate-600">Un parcours pour automatiser les constructions, comprendre les conteneurs et préparer une chaîne de livraison logicielle.</p>
+    <!-- Le lien conserve sa destination. Son style ne change pas son rôle. -->
+    <a href="devops.html" class="inline-block px-4 py-2 rounded-xl bg-blue-700 text-white mt-4">Découvrir DevOps</a>
+  </article>
+</div>
 </section><p id="contact" class="mt-8 text-slate-600">Contact pédagogique : échangez avec le formateur.</p>
   </main>
 </body>
